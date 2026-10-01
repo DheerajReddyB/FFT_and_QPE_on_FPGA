@@ -1,0 +1,324 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/SEM-7/Project_Phase_1/FPGA_2DFFT
+vbutterfly_unit
+Z1 !s110 1790579412
+!i10b 1
+!s100 F:[d3g5_F^?J;YoYW<9aK0
+IUD^Me44P[86<lM?2hm2[V0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790535106
+8butterfly_unit.v
+Fbutterfly_unit.v
+Z3 L0 14
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790579412.000000
+!s107 butterfly_unit.v|
+!s90 -work|work|butterfly_unit.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vfft_1d
+R1
+!i10b 1
+!s100 5Re37FlO@d8RPfj`MLFH?1
+I9Pn]ohHTncni2X1ilh[Eo0
+R2
+R0
+w1790535143
+8fft_1d.v
+Ffft_1d.v
+Z8 L0 19
+R4
+r1
+!s85 0
+31
+R5
+!s107 fft_1d.v|
+!s90 -work|work|fft_1d.v|
+!i113 1
+R6
+R7
+vfft_2d
+R1
+!i10b 1
+!s100 dejRD?zIMSfhXo5ZND=R_1
+IH9>=bf]KY?^]C4S3hEejW3
+R2
+R0
+w1790535180
+8fft_2d.v
+Ffft_2d.v
+Z9 L0 21
+R4
+r1
+!s85 0
+31
+R5
+!s107 fft_2d.v|
+!s90 -work|work|fft_2d.v|
+!i113 1
+R6
+R7
+vpeak_finder
+Z10 !s110 1790577260
+!i10b 1
+!s100 nKF][:bD06I0I@f3FDzEm2
+I`2ozMh_C<6Di>ORTGj2T=0
+R2
+R0
+w1790573298
+8peak_finder.v
+Fpeak_finder.v
+R9
+R4
+r1
+!s85 0
+31
+Z11 !s108 1790577260.000000
+!s107 peak_finder.v|
+!s90 -work|work|peak_finder.v|
+!i113 1
+R6
+R7
+vpeak_finder_dual
+R1
+!i10b 1
+!s100 k0zRWD]J=jHz2ck0FbBD33
+InBZdhV8UK>O;99e^zJD4K3
+R2
+R0
+w1790579078
+8peak_finder_dual.v
+Fpeak_finder_dual.v
+Z12 L0 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 peak_finder_dual.v|
+!s90 -work|work|peak_finder_dual.v|
+!i113 1
+R6
+R7
+vquartic_dual_top
+R1
+!i10b 1
+!s100 L[VPVIcYR@=>1TXYoCODK3
+IY4e_II1H@]1T3Lozh5;L=1
+R2
+R0
+w1790579091
+8quartic_dual_top.v
+Fquartic_dual_top.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 quartic_dual_top.v|
+!s90 -work|work|quartic_dual_top.v|
+!i113 1
+R6
+R7
+vquartic_interp
+R1
+!i10b 1
+!s100 UCP9L=8=jX6Wd65FXMgPN0
+I0?_Go1W1;RckfX2@4ZhXK3
+R2
+R0
+w1790577059
+8quartic_interp.v
+Fquartic_interp.v
+L0 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 quartic_interp.v|
+!s90 -work|work|quartic_interp.v|
+!i113 1
+R6
+R7
+vquartic_top
+R10
+!i10b 1
+!s100 hTmn5_YzJ>N6:XlF?Cz:?3
+I=:goZVRJP1dN_z<EO3B=?2
+R2
+R0
+w1790575853
+8quartic_top.v
+Fquartic_top.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 quartic_top.v|
+!s90 -work|work|quartic_top.v|
+!i113 1
+R6
+R7
+vtb_fft_2d
+!s110 1790538036
+!i10b 1
+!s100 9Y^c0;nci5[c6::<:XG]n0
+IkX084gea[hn_Ub[60DiEA1
+R2
+R0
+w1790537942
+8tb_fft_2d.v
+Ftb_fft_2d.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1790538036.000000
+!s107 tb_fft_2d.v|
+!s90 -work|work|tb_fft_2d.v|
+!i113 1
+R6
+R7
+vtb_fft_2d_two_targets
+!s110 1790571314
+!i10b 1
+!s100 e13;[0Qi:jW[[^IgJ>AXY2
+I[bdaSFIma5@T^Y]PEg=k:0
+R2
+R0
+w1790571313
+8tb_fft_2d_two_targets.v
+Ftb_fft_2d_two_targets.v
+L0 17
+R4
+r1
+!s85 0
+31
+!s108 1790571314.000000
+!s107 tb_fft_2d_two_targets.v|fft_2d.v|fft_1d.v|butterfly_unit.v|twiddle_rom.v|
+!s90 -work|work|twiddle_rom.v|butterfly_unit.v|fft_1d.v|fft_2d.v|tb_fft_2d_two_targets.v|
+!i113 1
+R6
+R7
+vtb_fft_only_two_targets
+R1
+!i10b 1
+!s100 fa0N9b58no8]OCGHIQWhX1
+ILWhOV;5EPLLz;5[:YKEk^1
+R2
+R0
+w1790579387
+8tb_fft_only_two_targets.v
+Ftb_fft_only_two_targets.v
+R12
+R4
+r1
+!s85 0
+31
+R5
+!s107 tb_fft_only_two_targets.v|
+!s90 -work|work|tb_fft_only_two_targets.v|
+!i113 1
+R6
+R7
+vtb_quartic
+R10
+!i10b 1
+!s100 24HfZDBihjWAZnnNY^WY81
+IVF3Y^mf5l;:kRD`>^2WRk2
+R2
+R0
+w1790575874
+8tb_quartic.v
+Ftb_quartic.v
+R9
+R4
+r1
+!s85 0
+31
+R11
+!s107 tb_quartic.v|
+!s90 -work|work|tb_quartic.v|
+!i113 1
+R6
+R7
+vtb_quartic_two_targets
+!s110 1790579136
+!i10b 1
+!s100 1PI=DZfJXKlcm?nVKiD3f1
+IPk^mWoKLDJ:Lz52Hlabhi3
+R2
+R0
+w1790579111
+8tb_quartic_two_targets.v
+Ftb_quartic_two_targets.v
+L0 16
+R4
+r1
+!s85 0
+31
+!s108 1790579136.000000
+!s107 tb_quartic_two_targets.v|
+!s90 -work|work|tb_quartic_two_targets.v|
+!i113 1
+R6
+R7
+vtest_math
+!s110 1790576774
+!i10b 1
+!s100 iGBlPAKILI:iklBDj89eF0
+Ii9c2b];E@U_;Mm7IPEUhQ3
+R2
+R0
+w1790576729
+8test_math.v
+Ftest_math.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1790576774.000000
+!s107 test_math.v|
+!s90 test_math.v|
+!i113 1
+R7
+vtwiddle_rom
+R1
+!i10b 1
+!s100 `g5U0V`BcC?zWl:<cW=XS3
+IQc6f>ggW4U71RQ<ccGJ]Z0
+R2
+R0
+w1790535093
+8twiddle_rom.v
+Ftwiddle_rom.v
+R8
+R4
+r1
+!s85 0
+31
+R5
+!s107 twiddle_rom.v|
+!s90 -work|work|twiddle_rom.v|
+!i113 1
+R6
+R7

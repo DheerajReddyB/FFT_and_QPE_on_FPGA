@@ -1,0 +1,161 @@
+# do run_fft_only_two_targets.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work twiddle_rom.v 
+# -- Compiling module twiddle_rom
+# 
+# Top level modules:
+# 	twiddle_rom
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work butterfly_unit.v 
+# -- Compiling module butterfly_unit
+# 
+# Top level modules:
+# 	butterfly_unit
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work fft_1d.v 
+# -- Compiling module fft_1d
+# 
+# Top level modules:
+# 	fft_1d
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work fft_2d.v 
+# -- Compiling module fft_2d
+# 
+# Top level modules:
+# 	fft_2d
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work quartic_interp.v 
+# -- Compiling module quartic_interp
+# 
+# Top level modules:
+# 	quartic_interp
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work peak_finder_dual.v 
+# -- Compiling module peak_finder_dual
+# 
+# Top level modules:
+# 	peak_finder_dual
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work quartic_dual_top.v 
+# -- Compiling module quartic_dual_top
+# 
+# Top level modules:
+# 	quartic_dual_top
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:12 on Sep 28,2026
+# vlog -work work tb_fft_only_two_targets.v 
+# -- Compiling module tb_fft_only_two_targets
+# 
+# Top level modules:
+# 	tb_fft_only_two_targets
+# End time: 12:40:12 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c work.tb_fft_only_two_targets 
+# Start time: 12:40:13 on Sep 28,2026
+# Loading work.tb_fft_only_two_targets
+# Loading work.quartic_dual_top
+# Loading work.fft_2d
+# Loading work.fft_1d
+# Loading work.twiddle_rom
+# Loading work.butterfly_unit
+# Loading work.peak_finder_dual
+# Loading work.quartic_interp
+# 
+# ====================================================================
+#    TWO-TARGET RESOLUTION — FFT ONLY (WITHOUT ESTIMATOR)
+#    Sampling Rate: 200 kHz | 2D Grid: 16x16 | Bin Width: 12.5 kHz
+#    Radar Specs: 24 GHz, B=150 MHz, T_chirp=1 ms (0.10 cm/Hz)
+#    Standard FFT Resolution: +/- 6250 Hz (+/- 6.25 m)
+# ====================================================================
+# [quartic_interp] pk_col=2 | root=7.943792e-08 | del=0.01 Hz | f_raw=25000 Hz | f_est=25000.01 Hz
+# [quartic_interp] pk_col=4 | root=3.505458e-05 | del=2.23 Hz | f_raw=50000 Hz | f_est=50002.23 Hz
+# 
+# ====================================================================
+#  z & f2=50.0 kHz (2.0 bins apart)
+#  Targets Ground Truth: f1 = 25000.0 Hz,  f2 = 50000.0 Hz
+#  True Frequency Gap  : Δf = 25000.0 Hz
+#  True Physical Range : ΔR = 25.00 m  (2500 cm)
+# --------------------------------------------------------------------
+#  TARGET 1 DETECTED (FFT-ONLY):
+#    2D FFT Bin Peak   : Row=0, Col=2
+#    FFT-Only Estimate : 25000 Hz  (Error: 0.0 Hz)
+#  TARGET 2 DETECTED (FFT-ONLY):
+#    2D FFT Bin Peak   : Row=0, Col=4
+#    FFT-Only Estimate : 50000 Hz  (Error: 0.0 Hz)
+# --------------------------------------------------------------------
+#  SEPARATION MEASURED BY FFT-ONLY:
+#    Measured Δf       : 25000 Hz  (Error: 0.0 Hz)
+#    Measured Distance : 2500 cm  (25.00 m)
+#    VERDICT           : RESOLVED [EXACT INTEGER BIN]
+# ====================================================================
+# [quartic_interp] pk_col=2 | root=-2.054797e-05 | del=-1.31 Hz | f_raw=25000 Hz | f_est=24998.69 Hz
+# [quartic_interp] pk_col=2 | root=9.848925e-02 | del=6249.86 Hz | f_raw=25000 Hz | f_est=31249.86 Hz
+# 
+# ====================================================================
+#  1.25 kHz (0.5 bin apart - close)
+#  Targets Ground Truth: f1 = 25000.0 Hz,  f2 = 31250.0 Hz
+#  True Frequency Gap  : Δf = 6250.0 Hz
+#  True Physical Range : ΔR = 6.25 m  (625 cm)
+# --------------------------------------------------------------------
+#  TARGET 1 DETECTED (FFT-ONLY):
+#    2D FFT Bin Peak   : Row=0, Col=2
+#    FFT-Only Estimate : 25000 Hz  (Error: 0.0 Hz)
+#  TARGET 2 DETECTED (FFT-ONLY):
+#    2D FFT Bin Peak   : Row=8, Col=2
+#    FFT-Only Estimate : 25000 Hz  (Error: 6250.0 Hz)
+# --------------------------------------------------------------------
+#  SEPARATION MEASURED BY FFT-ONLY:
+#    Measured Δf       : 0 Hz  (Error: 6250.0 Hz)
+#    Measured Distance : 0 cm  (0.00 m)
+#    VERDICT           : MERGED! Cannot separate targets (both land in same bin) [FAIL]
+# ====================================================================
+# [quartic_interp] pk_col=2 | root=1.712039e-02 | del=1089.81 Hz | f_raw=25000 Hz | f_est=26089.81 Hz
+# [quartic_interp] pk_col=2 | root=6.603120e-02 | del=4197.58 Hz | f_raw=25000 Hz | f_est=29197.58 Hz
+# 
+# ====================================================================
+#   bin apart - very close off-bin)
+#  Targets Ground Truth: f1 = 26000.0 Hz,  f2 = 29000.0 Hz
+#  True Frequency Gap  : Δf = 3000.0 Hz
+#  True Physical Range : ΔR = 3.00 m  (300 cm)
+# --------------------------------------------------------------------
+#  TARGET 1 DETECTED (FFT-ONLY):
+#    2D FFT Bin Peak   : Row=1, Col=2
+#    FFT-Only Estimate : 25000 Hz  (Error: 1000.0 Hz)
+#  TARGET 2 DETECTED (FFT-ONLY):
+#    2D FFT Bin Peak   : Row=5, Col=2
+#    FFT-Only Estimate : 25000 Hz  (Error: 4000.0 Hz)
+# --------------------------------------------------------------------
+#  SEPARATION MEASURED BY FFT-ONLY:
+#    Measured Δf       : 0 Hz  (Error: 3000.0 Hz)
+#    Measured Distance : 0 cm  (0.00 m)
+#    VERDICT           : MERGED! Cannot separate targets (both land in same bin) [FAIL]
+# ====================================================================
+# ** Note: $finish    : tb_fft_only_two_targets.v(173)
+#    Time: 109415 ns  Iteration: 1  Instance: /tb_fft_only_two_targets
+# End time: 12:40:13 on Sep 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
